@@ -5,107 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ToDoList_SCSS.css">
+    <link rel="stylesheet" href="https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css">
+    <link rel="stylesheet" href="ToDoList.css">
 </head>
 <body>
     <header>
         <h1>To Do List!!</h1>
     </header>
-    <section>
-        <ul>
-            <li>タスク名 <input type="text" name="name"></li>
-            <li>やりたい度 <input type="text" name="name"></li>
-            <li>やるべき度 <input type="text" name="name"></li>
-            <li>期限 <input type="date" name="name"></li>
-        </ul>
-        <button type="button" name="name" value="value">確定</button>
-    </section>
-    <section>
-        <ul>
-            <li>タスク一覧</li>
-            <li>優先度</li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-    <section>
-        <ul>
-            <li>終了したタスク</li>
-            <li>日付</li>
-            <li></li>
-        </ul>
-    </section>
-    <section>
-        <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>2020 Calendar</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="calendar-container">
-    <h1>October 2020</h1>
-    <table class="calendar">
-      <tr>
-        <th>SUN</th>
-        <th>MON</th>
-        <th>TUE</th>
-        <th>WED</th>
-        <th>THU</th>
-        <th>FRI</th>
-        <th>SAT</th>
-      </tr>
-      <tr class="day">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr class="day">
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-      </tr>
-      <tr class="day">
-        <td>11</td>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-      </tr>
-      <tr class="day">
-        <td>18</td>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-        <td>22</td>
-        <td>23</td>
-        <td>24</td>
-      </tr>
-      <tr class="day">
-        <td>25</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-        <td>31</td>
-      </tr>
-    </table>
-  </div>
-</body>
-</html>
-    </section>
-
+    <div class="wrapper">
+        <div ciass="input">
+                <ul>
+                    <li>タスク名</li>
+                    <li>やりたい度</li>
+                    <li>やるべき度</li>
+                    <li>期限</li>
+                </ul>
+                <ul>
+                    <li><input type="text" name="name"></li>
+                    <li><input type="text" name="name"></li>
+                    <li><input type="text" name="name"></li>
+                    <li><input type="date" name="name"></li>
+                    <li><button type="button" id="confirmation" name="name" value="value">確定</button></li>
+                </ul>
+        </div>
+        <div class="TasksPriorities">
+            <section>
+                <ul>
+                    <li>タスク一覧</li>
+                    <li>優先度</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+        <div class="shuuryoushitaTasks">
+            <section>
+                <ul>
+                    <li>終了したタスク</li>
+                    <li>日付</li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+        <div class="calendar-container">
+            <h1>October 2020</h1>
+            <table class="calendar">
+                <tr>
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>       
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr class="day">
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr class="day">
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr class="day">
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                          </tr>
+                <tr class="day">
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        
 </body>
 </html>
