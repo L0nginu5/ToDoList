@@ -1,0 +1,78 @@
+@charset "UTF-8";
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 10px;
+}
+
+.input {
+  display: grid; /* FlexboxではなくGridを適用する */
+  grid-template-columns: repeat(4, 1fr); /* 列を4つに分割 */
+  justify-content: space-between;
+}
+
+.TasksPriorities {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.shuuryoushitaTasks {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.calendar-container {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.calendar-container {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #f6f5f4;
+  color: #1a1a1a;
+}
+
+h1 {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.calendar {
+  padding: 0 30px 30px 30px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+td {
+  font-weight: bold;
+}
+
+.day *:first-child {
+  color: #ff838b;
+}
+
+.day *:last-child {
+  color: #6fb5ff;
+}/*# sourceMappingURL=ToDoList.css.map */
