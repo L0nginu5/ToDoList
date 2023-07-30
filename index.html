@@ -13,33 +13,71 @@
         <h1>To Do List!!</h1>
     </header>
     <div class="wrapper">
-        <div ciass="input">
-                <ul>
-                    <li>タスク名</li>
-                    <li>やりたい度</li>
-                    <li>やるべき度</li>
-                    <li>期限</li>
-                </ul>
-                <ul>
-                    <li><input type="text" id="name" name="name"></li>
-                    <li><input type="range" id="motivation" name="name" min="1" max="5"></li>
-                    <li><input type="range" id="importance" name="name" min="1" max="5"></li>
-                    <li><input type="date" id="dueDate" name="name"></li>
-                    <li><button type="button" id="confirmation" name="name" value="value">確定</button></li>
-                </ul>
+        <div id="taskAdd">
+            <ul>
+                <li>タスク名</li>
+                <li>やりたい度</li>
+                <li>やるべき度</li>
+                <li>期限</li>
+            </ul>
+        </div>
+        <div id="taskAddInput">
+            <ul>
+                <li><input type="text" id="name" name="name"></li>
+                <li><input type="range" id="motivation" name="name" min="1" max="5"></li>
+                <li><input type="range" id="importance" name="name" min="1" max="5"></li>
+                <li><input type="date" id="dueDate" name="name"></li>
+                <li><button type="button" id="confirmation" name="name" value="value">確定</button></li>
+            </ul>
         </div>
         <div class="tasksPriorities">
-            <section>
-                <ul>
-                    <li>タスク一覧</li>
-                    <li><div id="tasks"></div></li>
-                    <li>優先度</li>
-                    <li><div id="priorities"></div></li>
-                    <li>期限</li>
-                    <li><div id="dueDates"></div></li>
-                </ul>
-            </section>
+            <table border="1">
+                <tr>
+                    <th>タスク名</th>
+                    <th>優先度</th>
+                    <th>期限</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><div id="task1"></div></td>
+                    <td><div id="priority1"></div></td>
+                    <td><div id="dueDate1"></div></td>
+                    <td><button type="button" id="completed1" name="name" value="value">Completed!!</button></td>
+                </tr>
+                <tr>
+                    <td><div id="task2"></div></td>
+                    <td><div id="priority2"></div></td>
+                    <td><div id="dueDate2"></div></div></td>
+                    <td><button type="button" id="completed2" name="name" value="value">Completed!!</button></td>
+                </tr>
+                <tr>
+                    <td><div id="task3"></div></td>
+                    <td><div id="priority3"></div></td>
+                    <td><div id="dueDate3"></div></td>
+                    <td><button type="button" id="completed3" name="name" value="value">Completed!!</button></td>
+                </tr>
+                <tr>
+                    <td><div id="task4"></div></td>
+                    <td><div id="priority4"></div></td>
+                    <td><div id="dueDate4"></div></td>
+                    <td><button type="button" id="completed4" name="name" value="value">Completed!!</button></td>
+
+                </tr>
+                <tr>
+                    <td><div id="task5"></div></td>
+                    <td><div id="priority5"></div></td>
+                    <td><div id="dueDate5"></div></td>
+                    <td><button type="button" id="completed5" name="name" value="value">Completed!!</button></td>
+                </tr>
+                <tr>
+                    <td><div id="task6"></div></td>
+                    <td><div id="priority6"></div></td>
+                    <td><div id="dueDate6"></div></td>
+                    <td><button type="button" id="completed6" name="name" value="value">Completed!!</button></td>
+                </tr>
+            </table>
         </div>
+
         <div class="shuuryoushitaTasks">
             <section>
                 <ul>
